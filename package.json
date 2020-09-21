@@ -4,7 +4,7 @@
   "description": "This is an app that consumes the rick and morty API",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "callback" : "node src/callbacks/index.js"
   },
   "author": "Luis Rivero",
   "license": "MIT"

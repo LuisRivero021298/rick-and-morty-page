@@ -1,0 +1,11 @@
+{
+  "name": "rick-and-morty",
+  "version": "1.0.0",
+  "description": "This is an app that consumes the rick and morty API",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Luis Rivero",
+  "license": "MIT"
+}

@@ -1,0 +1,30 @@
+body, html {
+  font-family: $text_fonts;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  color: $light;
+}
+h1{
+  font-size:$h1;
+}
+h2{
+  font-size:$h2;
+}
+h3{
+  font-size:$h3;
+}
+
+h1,h2,h3{
+  margin-top: $space;
+  margin-bottom: $space;
+}
+
+.bold{
+  font-weight: bolder;
+}
+p,a {
+  color: $light;
+  font-size: $p;
+  margin-top: $space;
+  margin-bottom: $space;
+}

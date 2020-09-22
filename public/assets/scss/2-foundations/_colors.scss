@@ -1,14 +1,14 @@
 @mixin constructor($color){
   color:$color;
-  &_background{
+  &__background{
     background-color: $color;
   }
 }
 
-.brand_1 {
+.brand__1 {
   @include constructor($brand_1)
 }
-.brand_2 {
+.brand__2 {
   @include constructor($brand_2)
 }
 .dark {

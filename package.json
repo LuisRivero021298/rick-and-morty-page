@@ -4,8 +4,11 @@
   "description": "This is an app that consumes the rick and morty API",
   "main": "src/index.js",
   "scripts": {
-    "callback" : "node src/callbacks/index.js"
+    "dev": "node src/index.js"
   },
   "author": "Luis Rivero",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "xmlhttprequest": "^1.8.0"
+  }
 }

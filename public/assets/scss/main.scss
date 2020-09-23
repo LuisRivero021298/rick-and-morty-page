@@ -9,7 +9,12 @@
 @import '2-foundations/fonts';
 
 @import '3-atoms/title';
+@import '3-atoms/labels';
+@import '3-atoms/buttons';
 
-@import '4-molecules/labels';
+@import '4-molecules/card';
 
-@import '5-organisms/card';
+@import '5-organisms/card-grid';
+@import '5-organisms/header';
+
+@import '7-pages/home';

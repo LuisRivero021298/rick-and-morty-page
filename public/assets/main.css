@@ -360,10 +360,10 @@ template {
 }
 
 .light {
-  color: #dcdcdd;
+  color: #e7e7e7;
 }
 .light__background {
-  background-color: #dcdcdd;
+  background-color: #e7e7e7;
 }
 
 .spaced {
@@ -529,7 +529,7 @@ body, html {
   font-family: "Quicksand", sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  color: #dcdcdd;
+  color: #e7e7e7;
 }
 
 h1 {
@@ -555,7 +555,7 @@ h1, h2, h3 {
 }
 
 p, a {
-  color: #dcdcdd;
+  color: #e7e7e7;
   font-size: 0.9rem;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -577,10 +577,35 @@ p, a {
   border-radius: 2px;
 }
 
+.btn__action--reverse, .btn__action {
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.btn__action {
+  background-color: #0ead69;
+  color: #e7e7e7;
+}
+.btn__action--reverse {
+  background-color: #e7e7e7;
+  color: #0ead69;
+}
+
 .card {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   background-color: #212121;
+}
+.card__top {
+  width: 100%;
+}
+.card__top img {
+  width: 100%;
+  object-fit: contain;
 }
 .card__bottom {
   box-sizing: border-box;
@@ -593,11 +618,38 @@ p, a {
 }
 .card .card__label--alive {
   background-color: #0ead69;
-  color: #dcdcdd;
+  color: #e7e7e7;
 }
 .card .card__label--dead {
   background-color: #cd6ef0;
   color: #212121;
+}
+
+.card__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  max-width: 100%;
+}
+
+header .header__container {
+  height: 450px;
+  background-image: url("./images/rick-morty-collection-banner_1512x.jpg");
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .header__container h1 {
+  margin: 0;
+  text-align: center;
+  text-shadow: 5px 8px 8px rgba(0, 0, 0, 0.1);
+}
+
+#home {
+  background-color: #121212;
 }
 
 /*# sourceMappingURL=main.css.map */

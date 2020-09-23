@@ -2,6 +2,13 @@
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   background-color: $dark-2;
+  &__top {
+    width: 100%;
+    img {
+      width: 100%;
+      object-fit: contain;
+    }
+  }
   &__bottom {
     box-sizing: border-box;
     width: 100%;

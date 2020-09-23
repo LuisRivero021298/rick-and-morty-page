@@ -1,0 +1,23 @@
+%btn {
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: $bolder;
+}
+
+@mixin constructor($color1, $color2) {
+  @extend %btn;
+  background-color: $color1;
+  color: $color2;
+  &--reverse {
+    @extend %btn;
+    background-color: $color2;
+    color: $color1;
+  }
+}
+
+.btn__action {
+  @include constructor($brand-1,$light);
+}

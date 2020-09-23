@@ -1,0 +1,17 @@
+header {
+  .header__container {
+    height: 450px;
+    background-image: url('./images/rick-morty-collection-banner_1512x.jpg');
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h1 {
+      margin: 0;
+      text-align: center;
+      text-shadow: 5px 8px 8px rgba(0,0,0,.1);
+    }
+  }
+}

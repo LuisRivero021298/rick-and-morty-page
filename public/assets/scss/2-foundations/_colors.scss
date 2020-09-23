@@ -12,7 +12,12 @@
   @include constructor($brand_2)
 }
 .dark {
-  @include constructor($dark);
+  &-1{
+    @include constructor($dark-1);
+  }
+  &-1{
+    @include constructor($dark-2);
+  }
 }
 .light {
   @include constructor($light);

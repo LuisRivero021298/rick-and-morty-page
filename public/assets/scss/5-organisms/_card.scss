@@ -1,0 +1,30 @@
+.card {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: $dark-2;
+  &__bottom {
+    box-sizing: border-box;
+    width: 100%;
+    div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  .card__title {
+    @extend %title;
+  }
+  .card__label {
+    @extend %label;
+  }
+  .card__label--alive {
+    @extend %label;
+    background-color: $brand-1;
+    color: $light;
+  }
+  .card__label--dead {
+    @extend %label;
+    background-color: $brand-2;
+    color: $dark-2;
+  }
+}

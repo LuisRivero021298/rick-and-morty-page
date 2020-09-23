@@ -5,25 +5,25 @@
   }
   &__top{
     padding-top: $num;
-    &_margin{
+    &--margin{
       margin-top: $num;
     }
   }
   &__bottom{
     padding-top: $num;
-    &_margin{
+    &--margin{
       margin-bottom: $num;
     }
   }
   &__left{
     padding-top: $num;
-    &_margin{
+    &--margin{
       margin-left: $num;
     }
   }
   &__right{
     padding-top: $num;
-    &_margin{
+    &--margin{
       margin-right: $num;
     }
   }

@@ -2,11 +2,7 @@
   display: inline-block;
   font-size: $p;
   font-weight: $bolder;
-  color: $light;
-  &__alive{
-    background-color: $brand-1;
-  }
-  &__dead {
-    background-color: $brand-2;
-  }
+  color: $brand_1;
+  padding: 3px 5px;
+  border-radius:2px;
 }

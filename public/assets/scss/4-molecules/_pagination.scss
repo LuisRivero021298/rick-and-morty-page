@@ -1,0 +1,25 @@
+.pagination {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  a {
+    &#prev-page,
+    &#next-page{
+      line-height: 42px;
+    }
+    display: inline-block;
+    color: $light;
+    text-decoration: none;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    text-align: center;
+    line-height: 30px;
+    &.active {
+      background-color: $brand-1;
+      color: white;
+    }
+    &:hover:not(.active) { background-color:$brand-1; }
+  }
+}

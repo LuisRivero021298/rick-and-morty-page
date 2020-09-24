@@ -35,6 +35,9 @@
 .space{
   @include constructor($space)
 }
+.space__15{
+  @include constructor($space * 1.5)
+}
 .space__2{
   @include constructor($space * 2)
 }

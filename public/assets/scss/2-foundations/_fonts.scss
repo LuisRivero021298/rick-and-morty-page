@@ -3,6 +3,10 @@ body, html {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   color: $light;
+  font-size: 16px;
+  @media (min-width: 768px){
+    font-size: 20px;
+  }
 }
 h1{
   font-size:$h1;

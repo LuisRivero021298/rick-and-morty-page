@@ -401,6 +401,37 @@ template {
   margin-right: 10px;
 }
 
+.space__15 {
+  padding: 15px;
+}
+.space__15__margin {
+  margin: 15px;
+}
+.space__15__top {
+  padding-top: 15px;
+}
+.space__15__top--margin {
+  margin-top: 15px;
+}
+.space__15__bottom {
+  padding-top: 15px;
+}
+.space__15__bottom--margin {
+  margin-bottom: 15px;
+}
+.space__15__left {
+  padding-top: 15px;
+}
+.space__15__left--margin {
+  margin-left: 15px;
+}
+.space__15__right {
+  padding-top: 15px;
+}
+.space__15__right--margin {
+  margin-right: 15px;
+}
+
 .space__2 {
   padding: 20px;
 }
@@ -530,6 +561,12 @@ body, html {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   color: #e7e7e7;
+  font-size: 16px;
+}
+@media (min-width: 768px) {
+  body, html {
+    font-size: 20px;
+  }
 }
 
 h1 {
@@ -579,11 +616,16 @@ p, a {
 
 .btn__action--reverse, .btn__action {
   display: inline-block;
-  padding: 10px 15px;
+  padding: 8px 18px;
   border-radius: 4px;
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: 600;
+}
+@media (min-width: 768px) {
+  .btn__action--reverse, .btn__action {
+    padding: 10px 25px;
+  }
 }
 
 .btn__action {
@@ -630,6 +672,20 @@ p, a {
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
   max-width: 100%;
+  padding: 15px;
+}
+@media (min-width: 768px) {
+  .card__grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .card__grid {
+    grid-template-columns: repeat(4, 1fr);
+    padding: 30px;
+  }
 }
 
 header .header__container {
@@ -641,10 +697,13 @@ header .header__container {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
+}
+header .header__container div {
+  width: 90%;
 }
 header .header__container h1 {
   margin: 0;
-  text-align: center;
   text-shadow: 5px 8px 8px rgba(0, 0, 0, 0.1);
 }
 

@@ -55,14 +55,12 @@ fetchData(url)
 
 const getData = async () => {
   try {
-    const { info, results } = await fetchData(url);
-    const { count } = info;
+    const { results } = await fetchData(url);
     const [ data ] = results;
     const { name, id } = data;
     const { origin } = await fetchData(`${url}${id}`);
     const { dimension } = await fetchData(origin.url);
-
-    console.log(count);
+    
     console.log(name);
     console.log(dimension);
   } catch (error) {

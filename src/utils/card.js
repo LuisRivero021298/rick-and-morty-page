@@ -1,6 +1,9 @@
-const cardTemplate = ({image, origin, name, species, status}) => {
+const cardTemplate = (image, origin, name, species, status) => {
   const card = document.createElement('article');
   card.classList.add('card')
+
+  if (status === 'unknown') status = 'No registered';
+  if (origin.name === 'unknown') origin.name = 'No registered';
 
   card.innerHTML = `
   <div class="card__top">
@@ -20,3 +23,5 @@ const cardTemplate = ({image, origin, name, species, status}) => {
 
   return card;
 }
+
+export default cardTemplate;

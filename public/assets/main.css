@@ -360,10 +360,10 @@ template {
 }
 
 .light {
-  color: #e7e7e7;
+  color: #FFF;
 }
 .light__background {
-  background-color: #e7e7e7;
+  background-color: #FFF;
 }
 
 .spaced {
@@ -560,7 +560,7 @@ body, html {
   font-family: "Quicksand", sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  color: #e7e7e7;
+  color: #FFF;
   font-size: 16px;
 }
 @media (min-width: 768px) {
@@ -592,7 +592,7 @@ h1, h2, h3 {
 }
 
 p, a {
-  color: #e7e7e7;
+  color: #FFF;
   font-size: 0.9rem;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -630,10 +630,10 @@ p, a {
 
 .btn__action {
   background-color: #0ead69;
-  color: #e7e7e7;
+  color: #FFF;
 }
 .btn__action--reverse {
-  background-color: #e7e7e7;
+  background-color: #FFF;
   color: #0ead69;
 }
 
@@ -660,7 +660,7 @@ p, a {
 }
 .card .card__label--alive {
   background-color: #0ead69;
-  color: #e7e7e7;
+  color: #FFF;
 }
 .card .card__label--dead {
   background-color: #cd6ef0;
@@ -688,9 +688,9 @@ p, a {
 }
 
 header .header__container {
-  height: 100vh;
-  background-image: url("./images/rick-and-morty-banner.jpg");
-  background-position: left center;
+  height: 500px;
+  background-image: url("./images/banner.jpg");
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -699,15 +699,28 @@ header .header__container {
   text-align: center;
 }
 header .header__container div {
-  width: 90%;
+  width: 75%;
+}
+@media (min-width: 1024px) {
+  header .header__container div {
+    width: 40%;
+  }
 }
 header .header__container h1 {
   margin: 0;
   text-shadow: 5px 8px 8px rgba(0, 0, 0, 0.1);
 }
+@media (min-width: 1024px) {
+  header .header__container {
+    height: 380px;
+  }
+}
 
 #home {
   background-color: #121212;
+}
+#home footer {
+  text-align: center;
 }
 
 /*# sourceMappingURL=main.css.map */

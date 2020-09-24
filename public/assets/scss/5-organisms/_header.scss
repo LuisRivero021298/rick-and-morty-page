@@ -1,8 +1,8 @@
 header {
   .header__container {
-    height: 100vh;
-    background-image: url('./images/rick-and-morty-banner.jpg');
-    background-position: left center;
+    height: 500px;
+    background-image: url('./images/banner.jpg');
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -10,11 +10,17 @@ header {
     justify-content: center;
     text-align: center;
     div {
-      width: 90%;
+      width: 75%;
+      @media (min-width:1024px){
+        width: 40%;
+      }
     }
     h1 {
       margin: 0;
       text-shadow: 5px 8px 8px rgba(0,0,0,.1);
+    }
+    @media (min-width: 1024px){
+      height: 380px;
     }
   }
 }

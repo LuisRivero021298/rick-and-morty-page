@@ -1,6 +1,8 @@
-const cardTemplate = (image, origin, name, species, status) => {
+const cardTemplate = (image, origin, name, species, status, id) => {
   const card = document.createElement('article');
-  card.classList.add('card')
+  card.classList.add('card');
+  const newId = setId(id, name);
+  card.setAttribute('id', newId);
 
   if (status === 'unknown') status = 'No registered';
   if (origin.name === 'unknown') origin.name = 'No registered';
@@ -22,6 +24,12 @@ const cardTemplate = (image, origin, name, species, status) => {
   `;
 
   return card;
+}
+
+const setId = (id, name) => {
+  let nameResult = name.split(' ');
+
+  return `${id}-${nameResult[0]}`;
 }
 
 export default cardTemplate;

@@ -1,5 +1,3 @@
-//const XMLHttpRequest = require('xmlhttprequest').XMLHttpRequest;
-
 const fetchData = (urlApi) => {
   return new Promise((resolve, reject) => {
     let xhttp = new XMLHttpRequest();

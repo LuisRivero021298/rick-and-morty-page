@@ -2,11 +2,13 @@ import getHash from '../utils/getHash';
 import resolveRoutes from '../utils/resolveRoutes';
 import Home from '../pages/Home';
 import Error404 from '../pages/Error404';
+import Character from '../pages/Character';
 import Paginations from '../components/Paginations';
 
 const routes = {
   '/' : Home,
   '/:pages' : Home,
+  '/:id' : Character
 }
 
 const router = async () => {

@@ -1,11 +1,12 @@
 import getHash from '../utils/getHash';
 import resolveRoutes from '../utils/resolveRoutes';
 import Home from '../pages/Home';
+import Error404 from '../pages/Error404';
 import Paginations from '../components/Paginations';
 
 const routes = {
   '/' : Home,
-  '/page' : Home,
+  '/:pages' : Home,
 }
 
 const router = async () => {
@@ -17,7 +18,8 @@ const router = async () => {
   let hash = getHash();
   let route = await resolveRoutes(hash);
   let render = routes[route] ? routes[route] : Error404;
-  content.appendChild(await render()); 
+
+  content.innerHTML = await render(); 
   pagination.innerHTML = await Paginations();
 }
 

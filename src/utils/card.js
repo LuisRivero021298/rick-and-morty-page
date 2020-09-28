@@ -15,7 +15,7 @@ const cardTemplate = (characters) => {
           </div>
           <div>
             <span class="card__text">${character.species}</span>
-            <span class="card__label--${character.status.toLowerCase()}">${status}</span>
+            <span class="card__label--${character.status.toLowerCase()}">${character.status}</span>
           </div>
         </div>
       </a>

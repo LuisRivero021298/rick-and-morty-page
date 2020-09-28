@@ -2,6 +2,9 @@
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   background-color: $dark-2;
+  a{
+    text-decoration: none;
+  }
   &__top {
     width: 100%;
     img {

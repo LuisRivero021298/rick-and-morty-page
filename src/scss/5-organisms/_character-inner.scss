@@ -1,0 +1,12 @@
+.character__inner {
+  grid-template-columns: 1fr;
+  grid-gap: 1.5rem;
+  grid-row-gap: 1.5em;
+  display: grid;
+  width: 85%;
+  margin: 0 auto;
+  padding: 40px;
+  @media (min-width: 1024px) {
+    grid-template-columns: 1fr 2fr;
+  }
+}

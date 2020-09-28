@@ -7,11 +7,11 @@ const Character = async () => {
   
   return `
     <div class="character__inner">
-      <article class="character__card">
+      <article >
         <img src="${character.image}" alt="${character.name}" />
-        <h2>${character.name}</h2>
       </article>
       <article>
+        <h2>${character.name}</h2>
         <p>Episodes: <span>${character.episode.length}</span></p>
         <p>Status: <span>${character.status}</span></p>
         <p>Species: <span>${character.species}</span></p>

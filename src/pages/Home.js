@@ -1,6 +1,6 @@
 import getData from '../utils/getData';
 import getHash from '../utils/getHash';
-import cardTemplate from '../utils/card';
+import cardTemplate from '../components/card';
 
 const Home = async () => {
   const hash = await getHash();

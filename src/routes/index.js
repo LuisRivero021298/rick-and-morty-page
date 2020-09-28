@@ -1,9 +1,11 @@
 import getHash from '../utils/getHash';
 import resolveRoutes from '../utils/resolveRoutes';
+import Header from '../components/Header';
+import Paginations from '../components/Paginations';
 import Home from '../pages/Home';
 import Error404 from '../pages/Error404';
 import Character from '../pages/Character';
-import Paginations from '../components/Paginations';
+
 
 const routes = {
   '/' : Home,
@@ -12,11 +14,11 @@ const routes = {
 }
 
 const router = async () => {
-  //const header = null || document.getElementById('header');
+  const nav = null || document.getElementById('nav__header');
   const content = null || document.getElementById('content');
   const pagination = null || document.getElementById('pagination');
 
-  //header.innerHTML = await Header();
+  nav.innerHTML = await Header();
   let hash = getHash();
   let route = await resolveRoutes(hash);
   let render = routes[route] ? routes[route] : Error404;

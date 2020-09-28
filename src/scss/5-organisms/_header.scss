@@ -1,4 +1,21 @@
 header {
+  background-color: $dark-2;
+  .navbar {
+    height: 40px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .logo__container {
+      display: inline-block;
+      width: 150px;
+      height: 50px;
+      background-image: url('../../../public/assets/images/logo.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
   .header__container {
     height: 500px;
     background-image: url('../../../public/assets/images/banner.jpg');

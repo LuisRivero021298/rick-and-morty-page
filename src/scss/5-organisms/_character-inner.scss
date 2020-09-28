@@ -3,9 +3,14 @@
   grid-gap: 1.5rem;
   grid-row-gap: 1.5em;
   display: grid;
-  width: 85%;
+  width: 95%;
   margin: 0 auto;
-  padding: 40px;
+  padding: 20px;
+  box-sizing: border-box;
+  img {
+    width: 100%;
+    object-fit: contain;
+  }
   @media (min-width: 1024px) {
     grid-template-columns: 1fr 2fr;
   }
